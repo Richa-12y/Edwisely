@@ -1,0 +1,15 @@
+.button {
+  padding: 20px 10px 20px 10px;
+  cursor: pointer;
+  opacity: 1;
+  background-color: #b6c3c7;
+  font-weight: 700;
+  display: flex;
+}
+.button:hover {
+  opacity: 0.8;
+  background-color: #7b7c7c;
+}
+.icon {
+  margin-right: 5px;
+}

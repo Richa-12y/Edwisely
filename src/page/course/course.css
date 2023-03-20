@@ -1,0 +1,84 @@
+.main_course_container {
+  /* background-color: aqua; */
+  min-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.cours_navigation {
+  min-width: 20%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+  max-height: 100vh;
+}
+.cours_navigation > section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.course_text_container {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  margin-left: 4px;
+  /* background-color: yellow; */
+  width: 200px;
+}
+.content-scroll {
+  scroll-behavior: smooth;
+}
+.main_course_icon_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon_course {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course_line {
+  width: 2px;
+  height: 30px;
+  background-color: black;
+}
+.course_line_last {
+  width: 2px;
+  height: 0px;
+  background-color: black;
+}
+.learning_container {
+  min-width: 80%;
+  /* background-color: aliceblue; */
+  max-height: 100vh;
+}
+.code_container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 30px;
+}
+
+[alt="prg"] {
+  color: black;
+  font-size: medium;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.skill_test_button_container {
+  position: fixed;
+  right: 3%;
+  top: 2%;
+}

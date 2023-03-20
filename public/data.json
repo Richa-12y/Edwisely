@@ -1,0 +1,433 @@
+{
+  "javascript": {
+    "language": "JavaScript",
+    "concepts": [
+      {
+        "name": "What is Data Types",
+        "description": "In JavaScript, there are several data types, including strings, numbers, booleans, null, undefined, objects, and symbols.",
+        "example": "let name = 'John';\nlet age = 30;\nlet isMarried = false;\nlet address = null;\nlet job;\nlet person = { name: 'Jane', age: 25 };\nconst id = Symbol('id');"
+      },
+      {
+        "name": "What is Variables",
+        "description": "Variables in JavaScript are used to store values. They can be declared using the var, let, or const keywords.",
+        "example": "let greeting = 'Hello';\nconst PI = 3.14;\nvar count = 0;"
+      },
+      {
+        "name": "What is Loops",
+        "description": "Loops in JavaScript allow you to execute a block of code multiple times. There are several types of loops in JavaScript, including for, while, and do-while loops.",
+        "example": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}\n\nlet j = 0;\nwhile (j < 5) {\n  console.log(j);\n  j++;\n}\n\ndo {\n  console.log('This code will run at least once');\n} while (false);"
+      },
+      {
+        "name": "What is Conditional Statements",
+        "description": "Conditional statements in JavaScript allow you to execute different code based on different conditions. The most common conditional statements in JavaScript are if-else statements and switch statements.",
+        "example": "let x = 5;\nif (x > 10) {\n  console.log('x is greater than 10');\n} else {\n  console.log('x is less than or equal to 10');\n}\n\nlet color = 'red';\nswitch (color) {\n  case 'red':\n    console.log('The color is red');\n    break;\n  case 'blue':\n    console.log('The color is blue');\n    break;\n  default:\n    console.log('The color is not red or blue');\n}"
+      },
+      {
+        "name": "What is Arrays",
+        "description": "Arrays in JavaScript are used to store a collection of data. They can hold values of different data types and can be accessed using an index.",
+        "example": "let numbers = [1, 2, 3, 4, 5];\nlet fruits = ['apple', 'banana', 'orange'];\nconsole.log(numbers[0]); // Output: 1\nconsole.log(fruits.length); // Output: 3"
+      },
+      {
+        "name": " What is Strings",
+        "description": "Strings in JavaScript are used to represent text. They can be declared using single or double quotes and have several built-in methods for manipulating the text.",
+        "example": "let greeting = 'Hello, world!';\nconsole.log(greeting.length); // Output: 13\nconsole.log(greeting.toUpperCase()); // Output: HELLO, WORLD!\nconsole.log(greeting.indexOf('world')); // Output: 7"
+      }
+    ],
+
+    "questions": [
+      {
+        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "choices": ["10", "15", "25", "50"],
+        "answer": "15"
+      },
+      {
+        "question": "What is the result of the following expression?\n\ntypeof 42;",
+        "choices": ["string", "number", "boolean", "undefined"],
+        "answer": "number"
+      },
+      {
+        "question": "Which keyword is used to declare a function in JavaScript?",
+        "choices": ["var", "let", "const", "function"],
+        "answer": "function"
+      },
+      {
+        "question": "What does the acronym DOM stand for?",
+        "choices": [
+          "Document Object Model",
+          "Data Object Model",
+          "Document Oriented Model",
+          "Data Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+        "choices": ["122", "15", "14", "None of the above"],
+        "answer": "122"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
+        "choices": ["33", "123", "6", "None of the above"],
+        "answer": "33"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "choices": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
+        "choices": ["null", "undefined", "object", "None of the above"],
+        "answer": "object"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
+        "choices": ["true", "false", "TypeError", "None of the above"],
+        "answer": "true"
+      }
+    ]
+  },
+  "java": {
+    "language": "java",
+    "concepts": [
+      {
+        "name": "What is Data Types",
+        "description": "In Java, there are several data types, including integers, floating-point numbers, characters, booleans, and objects.",
+        "example": "int age = 30;\ndouble salary = 1000.50;\nchar grade = 'A';\nboolean isEmployed = true;\nString name = \"John Doe\";"
+      },
+      {
+        "name": " What is Variables",
+        "description": "Variables in Java are used to store values. They can be declared using a data type followed by a variable name.",
+        "example": "int x = 5;\ndouble pi = 3.14;\nString message = \"Hello, world!\";"
+      },
+      {
+        "name": "What is Loops",
+        "description": "Loops in Java allow you to execute a block of code multiple times. There are several types of loops in Java, including for, while, and do-while loops.",
+        "example": "for (int i = 0; i < 5; i++) {\n  System.out.println(i);\n}\n\nint j = 0;\nwhile (j < 5) {\n  System.out.println(j);\n  j++;\n}\n\ndo {\n  System.out.println(\"This code will run at least once\");\n} while (false);"
+      },
+      {
+        "name": "What is Conditional Statements",
+        "description": "Conditional statements in Java allow you to execute different code based on different conditions. The most common conditional statements in Java are if-else statements and switch statements.",
+        "example": "int x = 5;\nif (x > 10) {\n  System.out.println(\"x is greater than 10\");\n} else {\n  System.out.println(\"x is less than or equal to 10\");\n}\n\nString color = \"red\";\nswitch (color) {\n  case \"red\":\n    System.out.println(\"The color is red\");\n    break;\n  case \"blue\":\n    System.out.println(\"The color is blue\");\n    break;\n  default:\n    System.out.println(\"The color is not red or blue\");\n}"
+      },
+      {
+        "name": "What is Arrays",
+        "description": "Arrays in Java are used to store a collection of data. They can hold values of the same data type and can be accessed using an index.",
+        "example": "int[] numbers = {1, 2, 3, 4, 5};\nString[] fruits = {\"apple\", \"banana\", \"orange\"};\nSystem.out.println(numbers[0]);"
+      },
+      {
+        "name": "Strings",
+        "description": "Strings in Java are used to represent text. They can be declared using double quotes and have several built-in methods for manipulating the text.",
+        "example": "String greeting = \"Hello, world!\";\nSystem.out.println(greeting.length()); // Output: 13\nSystem.out.println(greeting.toUpperCase()); // Output: HELLO, WORLD!\nSystem.out.println(greeting.indexOf(\"world\")); // Output: 7"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "choices": ["10", "15", "25", "50"],
+        "answer": "15"
+      },
+      {
+        "question": "What is the result of the following expression?\n\ntypeof 42;",
+        "choices": ["string", "number", "boolean", "undefined"],
+        "answer": "number"
+      },
+      {
+        "question": "Which keyword is used to declare a function in JavaScript?",
+        "choices": ["var", "let", "const", "function"],
+        "answer": "function"
+      },
+      {
+        "question": "What does the acronym DOM stand for?",
+        "choices": [
+          "Document Object Model",
+          "Data Object Model",
+          "Document Oriented Model",
+          "Data Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+        "choices": ["122", "15", "14", "None of the above"],
+        "answer": "122"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
+        "choices": ["33", "123", "6", "None of the above"],
+        "answer": "33"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "choices": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
+        "choices": ["null", "undefined", "object", "None of the above"],
+        "answer": "object"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
+        "choices": ["true", "false", "TypeError", "None of the above"],
+        "answer": "true"
+      }
+    ]
+  },
+  "python": {
+    "language": "python",
+    "concepts": [
+      {
+        "name": "Data Types",
+        "description": "In Python, there are several data types, including integer, float, boolean, string, and list.",
+        "example": "age = 30\ncost = 9.99\nis_married = False\nname = \"John\"\nfruits = [\"apple\", \"banana\", \"orange\"]"
+      },
+      {
+        "name": "Variables",
+        "description": "Variables in Python are used to store values. They can be declared without specifying a data type.",
+        "example": "count = 0\nmessage = \"Hello, world!\"\nPI = 3.14"
+      },
+      {
+        "name": "Loops",
+        "description": "Loops in Python allow you to execute a block of code multiple times. There are two main types of loops in Python: for loops and while loops.",
+        "example": "for i in range(5):\n  print(i)\n\nj = 0\nwhile j < 5:\n  print(j)\n  j += 1"
+      },
+      {
+        "name": "Conditional Statements",
+        "description": "Conditional statements in Python allow you to execute different code based on different conditions. The most common conditional statement in Python is the if-else statement.",
+        "example": "x = 5\nif x > 10:\n  print(\"x is greater than 10\")\nelse:\n  print(\"x is less than or equal to 10\")"
+      },
+      {
+        "name": "Lists",
+        "description": "Lists in Python are used to store a collection of data. They can hold values of different data types and can be accessed using an index.",
+        "example": "numbers = [1, 2, 3, 4, 5]\nfruits = [\"apple\", \"banana\", \"orange\"]\nprint(numbers[0]) # Output: 1\nprint(len(fruits)) # Output: 3"
+      },
+      {
+        "name": "Strings",
+        "description": "Strings in Python are used to represent text. They can be declared using single quotes or double quotes and have several built-in methods for manipulating the text.",
+        "example": "greeting = \"Hello, world!\"\nprint(len(greeting)) # Output: 13\nprint(greeting.upper()) # Output: HELLO, WORLD!\nprint(greeting.find(\"world\")) # Output: 7"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "choices": ["10", "15", "25", "50"],
+        "answer": "15"
+      },
+      {
+        "question": "What is the result of the following expression?\n\ntypeof 42;",
+        "choices": ["string", "number", "boolean", "undefined"],
+        "answer": "number"
+      },
+      {
+        "question": "Which keyword is used to declare a function in JavaScript?",
+        "choices": ["var", "let", "const", "function"],
+        "answer": "function"
+      },
+      {
+        "question": "What does the acronym DOM stand for?",
+        "choices": [
+          "Document Object Model",
+          "Data Object Model",
+          "Document Oriented Model",
+          "Data Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+        "choices": ["122", "15", "14", "None of the above"],
+        "answer": "122"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
+        "choices": ["33", "123", "6", "None of the above"],
+        "answer": "33"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "choices": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
+        "choices": ["null", "undefined", "object", "None of the above"],
+        "answer": "object"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
+        "choices": ["true", "false", "TypeError", "None of the above"],
+        "answer": "true"
+      }
+    ]
+  },
+  "datastructuresandalgorithms": {
+    "language": "data structures and algorithms",
+    "concepts": [
+      {
+        "name": "Arrays",
+        "description": "Arrays are a fundamental data structure that store a collection of elements of the same data type. The elements are stored in contiguous memory locations, and can be accessed using an index.",
+        "example": "int[] numbers = {1, 2, 3, 4, 5};\nString[] fruits = {\"apple\", \"banana\", \"orange\"};"
+      },
+      {
+        "name": "Linked Lists",
+        "description": "A linked list is a data structure that consists of a sequence of nodes, where each node stores a value and a reference to the next node. Linked lists can be used to implement dynamic data structures and abstract data types.",
+        "example": "public class Node {\n  int data;\n  Node next;\n  public Node(int data) {\n    this.data = data;\n    this.next = null;\n  }\n}\n\npublic class LinkedList {\n  Node head;\n  public LinkedList() {\n    this.head = null;\n  }\n}"
+      },
+      {
+        "name": "Stacks",
+        "description": "A stack is a data structure that allows elements to be inserted and removed in a last-in-first-out (LIFO) order. It supports two main operations: push (to insert an element onto the stack) and pop (to remove an element from the stack).",
+        "example": "import java.util.Stack;\n\nStack<Integer> stack = new Stack<Integer>();\nstack.push(1);\nstack.push(2);\nstack.push(3);\nint top = stack.pop();\nSystem.out.println(top); // Output: 3"
+      },
+      {
+        "name": "Queues",
+        "description": "A queue is a data structure that allows elements to be inserted at the end and removed from the front in a first-in-first-out (FIFO) order. It supports two main operations: enqueue (to insert an element at the end of the queue) and dequeue (to remove an element from the front of the queue).",
+        "example": "import java.util.Queue;\nimport java.util.LinkedList;\n\nQueue<String> queue = new LinkedList<String>();\nqueue.add(\"apple\");\nqueue.add(\"banana\");\nqueue.add(\"orange\");\nString front = queue.remove();\nSystem.out.println(front); // Output: apple"
+      },
+      {
+        "name": "Recursion",
+        "description": "Recursion is a technique in which a function calls itself to solve a problem. It can be used to solve problems that can be broken down into smaller subproblems that are identical in structure.",
+        "example": "public int factorial(int n) {\n  if (n == 0) {\n    return 1;\n  }\n  else {\n    return n * factorial(n-1);\n  }\n}\n\nint result = factorial(5);\nSystem.out.println(result); // Output: 120"
+      },
+      {
+        "name": "Sorting Algorithms",
+        "description": "Sorting algorithms are used to arrange a collection of elements in a specific order, such as ascending or descending. There are many different sorting algorithms, each with its own advantages and disadvantages.",
+        "example": "public void bubbleSort(int[] arr) {\n  int n = arr.length;\n  for (int i = 0; i < n-1; i++) {\n}"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "choices": ["10", "15", "25", "50"],
+        "answer": "15"
+      },
+      {
+        "question": "What is the result of the following expression?\n\ntypeof 42;",
+        "choices": ["string", "number", "boolean", "undefined"],
+        "answer": "number"
+      },
+      {
+        "question": "Which keyword is used to declare a function in JavaScript?",
+        "choices": ["var", "let", "const", "function"],
+        "answer": "function"
+      },
+      {
+        "question": "What does the acronym DOM stand for?",
+        "choices": [
+          "Document Object Model",
+          "Data Object Model",
+          "Document Oriented Model",
+          "Data Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+        "choices": ["122", "15", "14", "None of the above"],
+        "answer": "122"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
+        "choices": ["33", "123", "6", "None of the above"],
+        "answer": "33"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "choices": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
+        "choices": ["null", "undefined", "object", "None of the above"],
+        "answer": "object"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
+        "choices": ["true", "false", "TypeError", "None of the above"],
+        "answer": "true"
+      }
+    ]
+  },
+  "c++": {
+    "language": "c++",
+    "concepts": [
+      {
+        "name": "Data Types",
+        "description": "Data types are used to define variables and functions in C++. C++ supports several built-in data types, including integers, floating-point numbers, characters, and booleans. It also allows for the creation of user-defined data types using classes and structures.",
+        "example": "int age = 25;\ndouble salary = 2500.50;\nchar grade = 'A';\nbool isPassed = true;"
+      },
+      {
+        "name": "Variables",
+        "description": "Variables are used to store data in memory for later use. In C++, variables must be declared with a data type and a name before they can be used. They can also be initialized with an initial value at the time of declaration.",
+        "example": "int num1, num2;\ndouble pi = 3.14;\nchar letter = 'B';\nbool isRaining = false;"
+      },
+      {
+        "name": "Loops",
+        "description": "Loops are used to execute a block of code repeatedly. C++ supports several types of loops, including for loops, while loops, and do-while loops. Loops can also be nested within each other to create more complex iterations.",
+        "example": "for (int i = 0; i < 10; i++) {\n  std::cout << i << \" \";\n}\n\nint i = 0;\nwhile (i < 10) {\n  std::cout << i << \" \";\n  i++;\n}\n\ndo {\n  std::cout << i << \" \";\n  i++;\n} while (i < 10);"
+      },
+      {
+        "name": "Conditional Statements",
+        "description": "Conditional statements are used to execute different blocks of code depending on whether a certain condition is true or false. C++ supports several types of conditional statements, including if statements, if-else statements, and switch statements.",
+        "example": "int age = 25;\nif (age >= 18) {\n  std::cout << \"You are an adult.\";\n}\nelse {\n  std::cout << \"You are a minor.\";\n}\n\nint grade = 85;\nif (grade >= 90) {\n  std::cout << \"You got an A.\";\n}\nelse if (grade >= 80) {\n  std::cout << \"You got a B.\";\n}\nelse {\n  std::cout << \"You got a C.\";\n}"
+      },
+      {
+        "name": "Arrays",
+        "description": "Arrays are a collection of elements of the same data type that are stored in contiguous memory locations. C++ supports both single-dimensional and multidimensional arrays, and allows for random access of array elements using an index.",
+        "example": "int numbers[5] = {1, 2, 3, 4, 5};\ndouble matrix[3][3] = {{1.0, 2.0, 3.0}, {4.0, 5.0, 6.0}, {7.0, 8.0, 9.0}}"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "choices": ["10", "15", "25", "50"],
+        "answer": "15"
+      },
+      {
+        "question": "What is the result of the following expression?\n\ntypeof 42;",
+        "choices": ["string", "number", "boolean", "undefined"],
+        "answer": "number"
+      },
+      {
+        "question": "Which keyword is used to declare a function in JavaScript?",
+        "choices": ["var", "let", "const", "function"],
+        "answer": "function"
+      },
+      {
+        "question": "What does the acronym DOM stand for?",
+        "choices": [
+          "Document Object Model",
+          "Data Object Model",
+          "Document Oriented Model",
+          "Data Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
+        "choices": ["122", "15", "14", "None of the above"],
+        "answer": "122"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
+        "choices": ["33", "123", "6", "None of the above"],
+        "answer": "33"
+      },
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "choices": ["var", "let", "const", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
+        "choices": ["null", "undefined", "object", "None of the above"],
+        "answer": "object"
+      },
+      {
+        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
+        "choices": ["true", "false", "TypeError", "None of the above"],
+        "answer": "true"
+      }
+    ]
+  }
+}
