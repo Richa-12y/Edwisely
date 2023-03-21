@@ -12,6 +12,7 @@ import Course from "./page/course/Course";
 import Quize from "./page/course/skilltest/Quize";
 import Dashboard from "./page/course/dasboard/Dashboard";
 import { useMediaQuery, useMediaQueries } from "@react-hook/media-query";
+import Home from "./page/course/home/Home";
 const App = () => {
   const [open, setOpen] = useState(false);
 
@@ -54,7 +55,7 @@ const App = () => {
       </div>
       <div className="main_container">
         <Routes>
-          <Route path="/" element={<h1>Hello</h1>} />
+          <Route path="/" element={<Home />} />
           <Route path="/dashobard" element={<Dashboard />} />
           <Route path="/course/:courseName" element={<Course />} />
           <Route path="/course/:courseName/skilltest" element={<Quize />} />
