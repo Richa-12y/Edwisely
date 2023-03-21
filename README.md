@@ -59,4 +59,19 @@
 - Icons: React Icons
 
 # Demo
-Here is a link to the deployed project: Learning Platform
+Here is a link to the deployed project: 
+ [Learning Platform](https://upskills-e68167.netlify.app/)
+ 
+ ## Project Image
+ ![image](https://user-images.githubusercontent.com/69744397/226616335-98342560-cbd9-4de7-897f-0eeae58cf6b7.png)
+ ![image](https://user-images.githubusercontent.com/69744397/226616825-df818b95-3a69-47b3-8a1b-75f209c68bda.png)
+ ![image](https://user-images.githubusercontent.com/69744397/226617077-1b183e12-0a2f-432d-8881-e727cfa24893.png)
+ ![image](https://user-images.githubusercontent.com/69744397/226617210-e2a6b5f4-a1df-4097-84f1-78cc80077145.png)
+ ![image](https://user-images.githubusercontent.com/69744397/226617574-037149c8-c56c-4963-b367-9291707e168c.png)
+ ![image](https://user-images.githubusercontent.com/69744397/226618128-ab5acd62-70c5-4e10-a1e2-797d25bb1b29.png)
+
+
+
+
+
+
