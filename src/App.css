@@ -34,6 +34,7 @@
 .main_container {
   width: 85%;
   max-height: 100vh;
+  min-height: 100vh;
   background-color: #b6c3c7;
   scroll-behavior: smooth;
 }
