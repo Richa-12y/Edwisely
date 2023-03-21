@@ -11,11 +11,6 @@ const Dashboard = () => {
   );
   const cPlus = JSON.parse(localStorage.getItem("c++"));
 
-  const style = {
-    width: 100,
-    display: "inline-block",
-    marginRight: 100,
-  };
   const style1 = {
     width: 300,
     display: "inline-block",
@@ -66,15 +61,22 @@ const Dashboard = () => {
         {marksData.map((el, i) => {
           return (
             <section>
-              <div key={i} style={style}>
-                <h6>{el.name}</h6>
+              <div key={i} className="bar-container">
+                <h6 className="progress-container-heading">
+                  {el.name === "datastructuresandalgorithms" ? "DSA" : el.name}
+                </h6>
                 {el.marks === "NaN" ? (
-                  <h6>Test is not Done</h6>
+                  <div className="textContainer">
+                    <h6>Test is not Done</h6>
+                  </div>
                 ) : (
-                  <Progress.Circle
-                    percent={el.marks}
-                    strokeColor={el.marks < 40 ? "red" : "green"}
-                  />
+                  <div>
+                    {" "}
+                    <Progress.Circle
+                      percent={el.marks}
+                      strokeColor={el.marks < 40 ? "red" : "green"}
+                    />
+                  </div>
                 )}
               </div>
             </section>
@@ -82,11 +84,16 @@ const Dashboard = () => {
         })}
       </div>
       <div>
-        {typeof totalOpetainePerstange === "object" ? (
-          <h6>All Test is Not Done.</h6>
+        {isNaN(totalOpetainePerstange) ? (
+          <div>
+            <h6>overall performance</h6>
+            <div className="textContainer">
+              <h6>All Test is Not Done.</h6>
+            </div>
+          </div>
         ) : (
           <div style={style1}>
-            <div>overall</div>
+            <div>overall performance</div>
             <Progress.Line
               percent={(
                 (totalOpetainePerstange / totalPersentage) *
