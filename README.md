@@ -2,6 +2,7 @@
 
 - This is a web application that allows users to read different courses and take skill tests to evaluate their knowledge. 
 - The application uses a quote generator API and custom JSON data for each course.
+- This web application is resposive to all device
 
 ##  Features
 > Users can read different courses and take skill tests to evaluate their knowledge.
