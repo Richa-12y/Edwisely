@@ -4,7 +4,7 @@ import style from "./logo.module.css";
 import { useMediaQuery, useMediaQueries } from "@react-hook/media-query";
 
 const Logo = () => {
-  const isMobile = useMediaQuery("only screen and (max-width: 321px)");
+  const isMobile = useMediaQuery("only screen and (max-width: 774px)");
   const naviagete = useNavigate();
   const gotoHome = () => {
     naviagete("/");

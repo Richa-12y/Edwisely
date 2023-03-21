@@ -56,34 +56,40 @@ const Dashboard = () => {
   console.log(totalOpetainePerstange);
   return (
     <div className="dashboard-container">
-      <div>indivial data</div>
-      <div className="dashboard-container_inside">
-        {marksData.map((el, i) => {
-          return (
-            <section>
-              <div key={i} className="bar-container">
-                <h6 className="progress-container-heading">
-                  {el.name === "datastructuresandalgorithms" ? "DSA" : el.name}
-                </h6>
-                {el.marks === "NaN" ? (
-                  <div className="textContainer">
-                    <h6>Test is not Done</h6>
-                  </div>
-                ) : (
-                  <div>
-                    {" "}
-                    <Progress.Circle
-                      percent={el.marks}
-                      strokeColor={el.marks < 40 ? "red" : "green"}
-                    />
-                  </div>
-                )}
-              </div>
-            </section>
-          );
-        })}
-      </div>
       <div>
+        <div>
+          <h5 style={{ fontWeight: "bold" }}>Indivial Test Result</h5>
+        </div>
+        <div className="dashboard-inside-container">
+          {marksData.map((el, i) => {
+            return (
+              <section>
+                <div key={i} className="bar-container">
+                  <h6 className="progress-container-heading">
+                    {el.name === "datastructuresandalgorithms"
+                      ? "DSA"
+                      : el.name}
+                  </h6>
+                  {el.marks === "NaN" ? (
+                    <div className="textContainer">
+                      <h6>Test is not Done</h6>
+                    </div>
+                  ) : (
+                    <div className="progress-bar-circle">
+                      {" "}
+                      <Progress.Circle
+                        percent={el.marks}
+                        strokeColor={el.marks < 40 ? "red" : "green"}
+                      />
+                    </div>
+                  )}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </div>
+      <div className="center-for-small-screen">
         {isNaN(totalOpetainePerstange) ? (
           <div>
             <h6>overall performance</h6>
