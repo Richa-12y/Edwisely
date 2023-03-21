@@ -1,15 +1,35 @@
 .dashboard-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   /* background-color: aqua; */
-  height: 100vh;
+  max-height: 100vh;
   text-align: center;
   text-transform: capitalize;
-  font-size: 30px;
-  font-weight: 600;
+  /* font-size: 30px; */
+  /* font-weight: 600; */
+  overflow-x: hidden;
+}
+.textContainer {
+  width: 180px;
+  height: 120px;
+  border: 1px solid gray;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bar-container {
+  margin: 20px;
+}
+.progress-container-heading {
+  /* background-color: red; */
+  width: 180px;
+  text-align: center;
+  margin-bottom: 0px;
 }
 h6:hover {
   color: blue;
@@ -23,7 +43,7 @@ h6:hover {
   .dashboard-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     overflow: auto;
     text-align: center;

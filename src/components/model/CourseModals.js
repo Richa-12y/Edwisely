@@ -89,7 +89,7 @@ const CourseModals = ({ handleClose, open }) => {
           </Button> */}
           <ButtonGroup style={{ marginTop: 12 }} justified>
             <Button onClick={handleClose} color="red" appearance="primary">
-              Cancle
+              Cancel
             </Button>
             <Button onClick={handleClose} color="green" appearance="primary">
               Ok
