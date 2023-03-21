@@ -1,5 +1,6 @@
 import React from "react";
 import { Progress } from "rsuite";
+import "./dashboard.css";
 
 const Dashboard = () => {
   const javaScriptdata = JSON.parse(localStorage.getItem("javascript"));
@@ -11,9 +12,9 @@ const Dashboard = () => {
   const cPlus = JSON.parse(localStorage.getItem("c++"));
 
   const style = {
-    width: 150,
+    width: 100,
     display: "inline-block",
-    marginRight: 10,
+    marginRight: 100,
   };
   const style1 = {
     width: 300,
@@ -59,22 +60,24 @@ const Dashboard = () => {
   let totalOpetainePerstange = result?.reduce((acc, val) => acc + val);
   console.log(totalOpetainePerstange);
   return (
-    <div>
-      <div>
-        <div>indivial data</div>
+    <div className="dashboard-container">
+      <div>indivial data</div>
+      <div className="dashboard-container_inside">
         {marksData.map((el, i) => {
           return (
-            <div key={i} style={style}>
-              <h6>{el.name}</h6>
-              {el.marks === "NaN" ? (
-                <h6>test is not sone</h6>
-              ) : (
-                <Progress.Circle
-                  percent={el.marks}
-                  strokeColor={el.marks < 40 ? "red" : "green"}
-                />
-              )}
-            </div>
+            <section>
+              <div key={i} style={style}>
+                <h6>{el.name}</h6>
+                {el.marks === "NaN" ? (
+                  <h6>Test is not Done</h6>
+                ) : (
+                  <Progress.Circle
+                    percent={el.marks}
+                    strokeColor={el.marks < 40 ? "red" : "green"}
+                  />
+                )}
+              </div>
+            </section>
           );
         })}
       </div>
@@ -83,7 +86,7 @@ const Dashboard = () => {
           <h6>All Test is Not Done.</h6>
         ) : (
           <div style={style1}>
-            <h6>overall</h6>
+            <div>overall</div>
             <Progress.Line
               percent={(
                 (totalOpetainePerstange / totalPersentage) *

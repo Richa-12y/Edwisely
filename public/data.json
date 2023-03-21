@@ -33,7 +33,6 @@
         "example": "let greeting = 'Hello, world!';\nconsole.log(greeting.length); // Output: 13\nconsole.log(greeting.toUpperCase()); // Output: HELLO, WORLD!\nconsole.log(greeting.indexOf('world')); // Output: 7"
       }
     ],
-
     "questions": [
       {
         "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
@@ -123,54 +122,39 @@
     ],
     "questions": [
       {
-        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
-        "choices": ["10", "15", "25", "50"],
+        "question": "What is the output of the following code?\n\nint a = 5;\nint b = 10;\nSystem.out.println(a + b);",
+        "choices": ["5", "10", "15", "Error"],
         "answer": "15"
       },
       {
-        "question": "What is the result of the following expression?\n\ntypeof 42;",
-        "choices": ["string", "number", "boolean", "undefined"],
-        "answer": "number"
+        "question": "What is the output of the following code?\n\nint a = 5;\ndouble b = 10.5;\nSystem.out.println(a + b);",
+        "choices": ["5", "10.5", "15.0", "Error"],
+        "answer": "15.0"
       },
       {
-        "question": "Which keyword is used to declare a function in JavaScript?",
-        "choices": ["var", "let", "const", "function"],
-        "answer": "function"
+        "question": "What is the output of the following code?\n\nint a = 5;\nint b = 10;\nSystem.out.println(a - b);",
+        "choices": ["5", "10", "-5", "Error"],
+        "answer": "-5"
       },
       {
-        "question": "What does the acronym DOM stand for?",
-        "choices": [
-          "Document Object Model",
-          "Data Object Model",
-          "Document Oriented Model",
-          "Data Oriented Model"
-        ],
-        "answer": "Document Object Model"
+        "question": "What is the output of the following code?\n\nint a = 10;\nint b = 3;\nSystem.out.println(a / b);",
+        "choices": ["3.33", "3", "2.5", "10"],
+        "answer": "3"
       },
       {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
-        "choices": ["122", "15", "14", "None of the above"],
-        "answer": "122"
+        "question": "What is the output of the following code?\n\nint a = 10;\nint b = 3;\nSystem.out.println(a % b);",
+        "choices": ["3.33", "3", "1", "0"],
+        "answer": "1"
       },
       {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
-        "choices": ["33", "123", "6", "None of the above"],
-        "answer": "33"
+        "question": "What is the output of the following code?\n\nString str = \"Java\";\nstr.concat(\"Programming\");\nSystem.out.println(str);",
+        "choices": ["Java", "Programming", "JavaProgramming", "Error"],
+        "answer": "Java"
       },
       {
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "choices": ["var", "let", "const", "All of the above"],
-        "answer": "All of the above"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
-        "choices": ["null", "undefined", "object", "None of the above"],
-        "answer": "object"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
-        "choices": ["true", "false", "TypeError", "None of the above"],
-        "answer": "true"
+        "question": "What is the output of the following code?\n\nString str = \"Hello\";\nstr = str + \" World!\";\nSystem.out.println(str);",
+        "choices": ["Hello", "World!", "Hello World!", "Error"],
+        "answer": "Hello World!"
       }
     ]
   },
@@ -210,54 +194,29 @@
     ],
     "questions": [
       {
-        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
-        "choices": ["10", "15", "25", "50"],
+        "question": "What is the output of the following code?\n\nx = 5\ny = 10\nprint(x + y)",
+        "choices": ["5", "10", "15", "50"],
         "answer": "15"
       },
       {
-        "question": "What is the result of the following expression?\n\ntypeof 42;",
-        "choices": ["string", "number", "boolean", "undefined"],
-        "answer": "number"
+        "question": "What is the output of the following code?\n\nx = 3\ny = 2\nprint(x ** y)",
+        "choices": ["5", "6", "8", "9"],
+        "answer": "9"
       },
       {
-        "question": "Which keyword is used to declare a function in JavaScript?",
-        "choices": ["var", "let", "const", "function"],
-        "answer": "function"
+        "question": "What is the output of the following code?\n\nx = \"Hello\"\nprint(x[1:4])",
+        "choices": ["He", "Hel", "ell", "llo"],
+        "answer": "ell"
       },
       {
-        "question": "What does the acronym DOM stand for?",
-        "choices": [
-          "Document Object Model",
-          "Data Object Model",
-          "Document Oriented Model",
-          "Data Oriented Model"
-        ],
-        "answer": "Document Object Model"
+        "question": "What is the output of the following code?\n\nx = [1, 2, 3]\ny = x\ny[0] = 4\nprint(x[0])",
+        "choices": ["1", "2", "3", "4"],
+        "answer": "4"
       },
       {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
-        "choices": ["122", "15", "14", "None of the above"],
-        "answer": "122"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
-        "choices": ["33", "123", "6", "None of the above"],
-        "answer": "33"
-      },
-      {
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "choices": ["var", "let", "const", "All of the above"],
-        "answer": "All of the above"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
-        "choices": ["null", "undefined", "object", "None of the above"],
-        "answer": "object"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
-        "choices": ["true", "false", "TypeError", "None of the above"],
-        "answer": "true"
+        "question": "What is the output of the following code?\n\nx = (1, 2, 3)\nx[0] = 4\nprint(x[0])",
+        "choices": ["1", "2", "3", "4"],
+        "answer": "Error"
       }
     ]
   },
@@ -297,54 +256,24 @@
     ],
     "questions": [
       {
-        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
-        "choices": ["10", "15", "25", "50"],
-        "answer": "15"
+        "question": "Which data structure has the LIFO (Last-In-First-Out) property?",
+        "choices": ["Queue", "Stack", "List", "Tree"],
+        "answer": "Stack"
       },
       {
-        "question": "What is the result of the following expression?\n\ntypeof 42;",
-        "choices": ["string", "number", "boolean", "undefined"],
-        "answer": "number"
+        "question": "Which of the following sorting algorithms has the worst-case time complexity of O(n^2)?",
+        "choices": ["Insertion sort", "Merge sort", "Quick sort", "Heap sort"],
+        "answer": "Insertion sort"
       },
       {
-        "question": "Which keyword is used to declare a function in JavaScript?",
-        "choices": ["var", "let", "const", "function"],
-        "answer": "function"
+        "question": "What is the time complexity of inserting an element into a hash table?",
+        "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+        "answer": "O(1)"
       },
       {
-        "question": "What does the acronym DOM stand for?",
-        "choices": [
-          "Document Object Model",
-          "Data Object Model",
-          "Document Oriented Model",
-          "Data Oriented Model"
-        ],
-        "answer": "Document Object Model"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
-        "choices": ["122", "15", "14", "None of the above"],
-        "answer": "122"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
-        "choices": ["33", "123", "6", "None of the above"],
-        "answer": "33"
-      },
-      {
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "choices": ["var", "let", "const", "All of the above"],
-        "answer": "All of the above"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
-        "choices": ["null", "undefined", "object", "None of the above"],
-        "answer": "object"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
-        "choices": ["true", "false", "TypeError", "None of the above"],
-        "answer": "true"
+        "question": "What is the output of the following recursive function?\n\nfunction factorial(n) {\n  if (n === 1) {\n    return 1;\n  }\n  return n * factorial(n - 1);\n}\nconsole.log(factorial(5));",
+        "choices": ["5", "25", "120", "Error"],
+        "answer": "120"
       }
     ]
   },
@@ -379,54 +308,29 @@
     ],
     "questions": [
       {
-        "question": "What is the output of the following code?\n\nvar a = 5;\nvar b = 10;\nconsole.log(a + b);",
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main()\n{\n    int a = 5;\n    int b = 10;\n    cout << a + b << endl;\n    return 0;\n}",
         "choices": ["10", "15", "25", "50"],
         "answer": "15"
       },
       {
-        "question": "What is the result of the following expression?\n\ntypeof 42;",
-        "choices": ["string", "number", "boolean", "undefined"],
-        "answer": "number"
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main()\n{\n    int a = 5;\n    int b = 10;\n    cout << a - b << endl;\n    return 0;\n}",
+        "choices": ["5", "10", "-5", "Error"],
+        "answer": "-5"
       },
       {
-        "question": "Which keyword is used to declare a function in JavaScript?",
-        "choices": ["var", "let", "const", "function"],
-        "answer": "function"
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main()\n{\n    double a = 5.0;\n    int b = 10;\n    cout << a + b << endl;\n    return 0;\n}",
+        "choices": ["5", "10.0", "15.0", "Error"],
+        "answer": "15.0"
       },
       {
-        "question": "What does the acronym DOM stand for?",
-        "choices": [
-          "Document Object Model",
-          "Data Object Model",
-          "Document Oriented Model",
-          "Data Oriented Model"
-        ],
-        "answer": "Document Object Model"
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main()\n{\n    string s1 = \"Hello\";\n    string s2 = \"World\";\n    cout << s1 + s2 << endl;\n    return 0;\n}",
+        "choices": ["Hello", "World", "HelloWorld", "Error"],
+        "answer": "HelloWorld"
       },
       {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + '2' + '2');",
-        "choices": ["122", "15", "14", "None of the above"],
-        "answer": "122"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(1 + 2 + '3');",
-        "choices": ["33", "123", "6", "None of the above"],
-        "answer": "33"
-      },
-      {
-        "question": "Which keyword is used to declare a variable in JavaScript?",
-        "choices": ["var", "let", "const", "All of the above"],
-        "answer": "All of the above"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(typeof(null));",
-        "choices": ["null", "undefined", "object", "None of the above"],
-        "answer": "object"
-      },
-      {
-        "question": "What is the output of the following code?\n\nconsole.log(5 == '5');",
-        "choices": ["true", "false", "TypeError", "None of the above"],
-        "answer": "true"
+        "question": "What is the output of the following code?\n\n#include <iostream>\nusing namespace std;\nint main()\n{\n    int a[] = {1, 2, 3};\n    int *p = a;\n    cout << *p << endl;\n    return 0;\n}",
+        "choices": ["1", "2", "3", "Error"],
+        "answer": "1"
       }
     ]
   }

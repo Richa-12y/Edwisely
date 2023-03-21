@@ -9,12 +9,12 @@
 .quize_container > div {
   width: 700px;
   height: 300px;
-  background-color: #254343;
+  background-color: #c2c9cb;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid #687978;
+  border: 3px solid #b6c3c7;
   border-radius: 15px;
   color: whitesmoke;
 }

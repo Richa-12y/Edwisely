@@ -13,6 +13,8 @@ const Course = () => {
   // const isMobile = useMediaQuery("(max-width: 1023px)");
   const [courseListData, setCourseListData] = useState([]);
   const [urlLink, setUrlLink] = useState();
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(-1);
+
   const params = useParams();
   console.log(params);
   //   console.log(params.courseName);
@@ -50,6 +52,9 @@ const Course = () => {
   const goTo = () => {
     naviagte(`${urlLink}/skilltest`);
   };
+  const handleQuestionClick = (index) => {
+    setCurrentQuestionIndex(index);
+  };
   //  <a
   //                           href={parseInt(el.id) > 2 ? "#2" : `#${el?.id}`}
   //                           style={{ color: "white", textDecoration: "none" }}
@@ -70,10 +75,20 @@ const Course = () => {
       {!isMobile && (
         <div className="cours_navigation">
           {courseListData.map((el, i) => {
+            const completed = i <= currentQuestionIndex;
+            const iconClass = completed
+              ? "icon_course completed"
+              : "icon_course";
             return (
               <section key={i}>
                 <div className="main_course_icon_container">
-                  <div className="icon_course">{i + 1}</div>
+                  <div
+                    className={iconClass}
+                    onClick={() => handleQuestionClick(i)}
+                  >
+                    {i + 1}
+                  </div>
+                  {/* <div className={iconClass}>{i + 1}</div> */}
                   <div
                     className={
                       courseListData.length - 1 === i
@@ -197,6 +212,42 @@ const Course = () => {
                               .replace(
                                 "// Output:",
                                 '<span style="color:gray">// Output:</span>'
+                              )
+                              .replace(
+                                "int",
+                                '<span style="color:yellow">int</span>'
+                              )
+                              .replace(
+                                "uble",
+                                '<span style="color:cyan">uble</span>'
+                              )
+                              .replace(
+                                "char",
+                                '<span style="color:blue">char</span>'
+                              )
+                              .replace(
+                                "boolean",
+                                '<span style="color:teal">boolean</span>'
+                              )
+                              .replace(
+                                "String",
+                                '<span style="color:blue">String</span>'
+                              )
+                              .replace(
+                                "System.out",
+                                '<span style="color:yellow">System.out</span>'
+                              )
+                              .replace(
+                                "pr",
+                                '<span style="color:yellow">pr</span>'
+                              )
+                              .replace(
+                                "In",
+                                '<span style="color:yellow">In</span>'
+                              )
+                              .replace(
+                                "std",
+                                '<span style="color:yellow">std</span>'
                               ),
                           }}
                         />
