@@ -36,7 +36,7 @@
 - Quote Generator API
 
 ### How to Use
-- Navigate to the home page to see the available courses.
+- Click on to courses button inside navbar to view all avialable courses.
 - Click on a course to start reading it.
 - Once you have finished reading, click on the "Skill Test" button to evaluate your knowledge.
 - The individual marks for each test and overall progress can be viewed on the dashboard.
