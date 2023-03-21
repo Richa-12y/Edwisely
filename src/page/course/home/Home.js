@@ -59,8 +59,10 @@ const Home = () => {
 
   return (
     <>
-      {quote.length === 0 ? (
-        <Loader size="lg" content="Loading..." />
+      {quote === "" ? (
+        <div className="loading_home_container">
+          <Loader size="lg" content="Loading..." />
+        </div>
       ) : (
         <div className="home_container">
           <div className="home_container_inside">

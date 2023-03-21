@@ -46,6 +46,12 @@
   border-radius: 50%;
   border: 3px solid #b7bbbc;
 }
+.loading_home_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
 @media screen and (max-width: 767px) {
   .home_container_inside {

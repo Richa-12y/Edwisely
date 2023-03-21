@@ -82,7 +82,7 @@ const Dashboard = () => {
         })}
       </div>
       <div>
-        {typeof totalOpetainePerstange !== "number" ? (
+        {typeof totalOpetainePerstange === "object" ? (
           <h6>All Test is Not Done.</h6>
         ) : (
           <div style={style1}>
