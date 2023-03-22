@@ -58,7 +58,16 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div>
         <div>
-          <h5 style={{ fontWeight: "bold" }}>Indivial Test Result</h5>
+          <h5
+            style={{
+              fontWeight: "700",
+              color: "blue",
+              fontSize: "30px",
+              padding: "10px",
+            }}
+          >
+            Indivial Test Result
+          </h5>
         </div>
         <div className="dashboard-inside-container">
           {marksData.map((el, i) => {
@@ -92,14 +101,14 @@ const Dashboard = () => {
       <div className="center-for-small-screen">
         {isNaN(totalOpetainePerstange) ? (
           <div>
-            <h6>overall performance</h6>
+            <h6>Overall Performance</h6>
             <div className="textContainer">
               <h6>All Test is Not Done.</h6>
             </div>
           </div>
         ) : (
           <div style={style1}>
-            <div>overall performance</div>
+            <div>Overall Performance</div>
             <Progress.Line
               percent={(
                 (totalOpetainePerstange / totalPersentage) *
