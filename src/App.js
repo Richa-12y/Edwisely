@@ -13,6 +13,7 @@ import Quize from "./page/course/skilltest/Quize";
 import Dashboard from "./page/course/dasboard/Dashboard";
 import { useMediaQuery, useMediaQueries } from "@react-hook/media-query";
 import Home from "./page/course/home/Home";
+import AddWrapper from "./components/uitils/addWrapper/AddWrapper";
 const App = () => {
   const [open, setOpen] = useState(false);
 
@@ -55,10 +56,38 @@ const App = () => {
       </div>
       <div className="main_container">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashobard" element={<Dashboard />} />
-          <Route path="/course/:courseName" element={<Course />} />
-          <Route path="/course/:courseName/skilltest" element={<Quize />} />
+          <Route
+            path="/"
+            element={
+              <AddWrapper>
+                <Home />
+              </AddWrapper>
+            }
+          />
+          <Route
+            path="/dashobard"
+            element={
+              <AddWrapper>
+                <Dashboard />
+              </AddWrapper>
+            }
+          />
+          <Route
+            path="/course/:courseName"
+            element={
+              <AddWrapper>
+                <Course />
+              </AddWrapper>
+            }
+          />
+          <Route
+            path="/course/:courseName/skilltest"
+            element={
+              <AddWrapper>
+                <Quize />
+              </AddWrapper>
+            }
+          />
 
           <Route path="*" element={<h1>Page Not Found</h1>} />
         </Routes>
