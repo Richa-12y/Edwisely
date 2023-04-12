@@ -28,7 +28,7 @@ const AddWrapper = ({ children }) => {
       setNotificatioMsg(adText[randomNumberForText]);
       setPosition(positionArray[randomNumber]);
       setStatusType(statusArray[randomNumberForStatus]);
-    }, 6000);
+    }, 10000);
     return () => clearInterval(x);
   }, []);
   return (

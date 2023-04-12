@@ -8,6 +8,7 @@ import axios from "axios";
 import { Panel, Placeholder, Button } from "rsuite";
 
 const Course = () => {
+  const params = useParams();
   const isMobile = useMediaQuery("only screen and (max-width: 1023px)");
   console.log(isMobile);
   // const isMobile = useMediaQuery("(max-width: 1023px)");
@@ -15,7 +16,6 @@ const Course = () => {
   const [urlLink, setUrlLink] = useState();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(-1);
 
-  const params = useParams();
   console.log(params);
   //   console.log(params.courseName);
   //   console.log(data);
@@ -32,33 +32,29 @@ const Course = () => {
       } catch (error) {}
     };
     featchData();
+
     let currentUrl = location.pathname.split("#");
 
-    console.log(location.pathname);
+    console.log(location.hash[1]);
+    setCurrentQuestionIndex(+location.hash[1]);
     if (Array.isArray(currentUrl)) {
       setUrlLink(currentUrl[0]);
+      console.log(currentUrl[1]);
     } else {
       setUrlLink(currentUrl);
     }
-  }, [courseName, location.pathname]);
+  }, [courseName, location.pathname, location.hash]);
   console.log(urlLink);
   console.log(courseListData);
   const convertCodeIntoHtml = (e) => {
     let result = e.split("\n");
-    console.log(result);
+
     return result;
   };
   const naviagte = useNavigate();
   const goTo = () => {
     naviagte(`${urlLink}/skilltest`);
   };
-  const handleQuestionClick = (index) => {
-    setCurrentQuestionIndex(index);
-  };
-  //  <a
-  //                           href={parseInt(el.id) > 2 ? "#2" : `#${el?.id}`}
-  //                           style={{ color: "white", textDecoration: "none" }}
-  //                         ></a>
 
   const getShorterName = (value) => {
     let result = "";
@@ -70,48 +66,55 @@ const Course = () => {
 
     return result;
   };
+
   return (
-    <div className="main_course_container">
+    <div
+      className={
+        isMobile ? " main_course_container_small" : `main_course_container`
+      }
+    >
       {!isMobile && (
-        <div className="cours_navigation">
-          {courseListData.map((el, i) => {
-            const completed = i <= currentQuestionIndex;
-            const iconClass = completed
-              ? "icon_course completed"
-              : "icon_course";
-            return (
-              <section key={i}>
-                <div className="main_course_icon_container">
-                  <div
-                    className={iconClass}
-                    onClick={() => handleQuestionClick(i)}
-                  >
-                    {i + 1}
+        <div className="fixed-cours-navigtor">
+          <div className="cours_navigation">
+            {courseListData.map((el, i) => {
+              return (
+                <section key={i}>
+                  <div className="main_course_icon_container">
+                    <div
+                      className={
+                        i <= currentQuestionIndex
+                          ? "icon_course completed"
+                          : "icon_course"
+                      }
+                    >
+                      {i + 1}
+                    </div>
+                    {/* <div className={iconClass}>{i + 1}</div> */}
+                    <div
+                      className={
+                        courseListData.length - 1 === i
+                          ? "course_line_last"
+                          : "course_line"
+                      }
+                    ></div>
                   </div>
-                  {/* <div className={iconClass}>{i + 1}</div> */}
-                  <div
-                    className={
-                      courseListData.length - 1 === i
-                        ? "course_line_last"
-                        : "course_line"
-                    }
-                  ></div>
-                </div>
-                <div className="course_text_container">
-                  <a
-                    style={{ color: "gray", textDecoration: "none" }}
-                    href={`#${i}`}
-                  >
-                    {getShorterName(el.name)}
-                  </a>
-                </div>
-              </section>
-            );
-          })}
+                  <div className="course_text_container">
+                    <a
+                      style={{ color: "gray", textDecoration: "none" }}
+                      href={`#${i}`}
+                    >
+                      {getShorterName(el.name)}
+                    </a>
+                  </div>
+                </section>
+              );
+            })}
+          </div>
         </div>
       )}
-
-      <div className="learning_container">
+      <div
+        className={isMobile ? "learning_container_small" : "learning_container"}
+      >
         <div>
           {courseListData.map((el, i) => {
             return (

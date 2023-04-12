@@ -11,7 +11,7 @@ const Logo = () => {
   };
   return (
     <div className={style["sidebar_logo"]} onClick={gotoHome}>
-      <span>{!isMobile ? "BlogGround" : "Bg"}</span>
+      <span>{!isMobile ? "Edwisely" : "Ey"}</span>
     </div>
   );
 };
