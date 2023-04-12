@@ -1,0 +1,185 @@
+.container {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  z-index: 1000;
+}
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em 20vw 3em 20vw;
+}
+[position="top-left"] {
+  top: 1%;
+  left: 1%;
+}
+[position="top-center"] {
+  top: 1%;
+  justify-content: center;
+}
+[position="top-right"] {
+  top: 1%;
+  justify-content: flex-end;
+  margin-left: -1%;
+}
+[position="center-right"] {
+  top: 50%;
+  justify-content: flex-end;
+  margin-left: -1%;
+}
+[position="center"] {
+  top: 50%;
+  justify-content: center;
+  margin-left: -1%;
+}
+[position="center-left"] {
+  top: 50%;
+  justify-content: flex-start;
+  margin-left: 1%;
+}
+[position="bottom-left"] {
+  top: 85%;
+  left: 1%;
+}
+[position="bottom-center"] {
+  top: 85%;
+  justify-content: center;
+}
+[position="bottom-right"] {
+  top: 85%;
+  justify-content: flex-end;
+  margin-left: -1%;
+}
+.notification .notification-icon {
+  /* background-color: red; */
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+.success {
+  background-color: #cff4d2;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 255, 183) 100%,
+      rgb(0, 255, 183) 100%
+    ),
+    linear-gradient(to bottom, rgb(0, 255, 183) 100%, rgb(0, 255, 183) 100%),
+    linear-gradient(to right, rgb(0, 255, 183) 100%, rgb(0, 255, 183) 100%),
+    linear-gradient(to bottom, rgb(0, 255, 183) 100%, rgb(0, 255, 183) 100%);
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: running;
+}
+
+.warrning {
+  background-color: #fedebe;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #fe6e00 100%, #fe6e00 100%),
+    linear-gradient(to bottom, #fe6e00 100%, #fe6e00 100%),
+    linear-gradient(to right, #fe6e00 100%, #fe6e00 100%),
+    linear-gradient(to bottom, #fe6e00 100%, #fe6e00 100%);
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: running;
+}
+/* .success::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 255, 183);
+  top: 0%;
+  
+} */
+.celebration {
+  /* display: inline-block; */
+  animation: celebration 1s linear infinite;
+}
+
+@keyframes celebration {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.error {
+  background-color: #ffbaba;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #ff0000 100%, #ff0000 100%),
+    linear-gradient(to bottom, #ff0000 100%, #ff0000 100%),
+    linear-gradient(to right, #ff0000 100%, #ff0000 100%),
+    linear-gradient(to bottom, #ff0000 100%, #ff0000 100%);
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: running;
+  color: #a70000;
+}
+@keyframes bg {
+  0% {
+    background-size: 0 1px, 1px 0, 0 1px, 1px 0;
+  }
+  25% {
+    background-size: 100% 1px, 1px 0, 0 1px, 1px 0;
+  }
+  50% {
+    background-size: 100% 1px, 1px 100%, 0 1px, 1px 0;
+  }
+  75% {
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0;
+  }
+  100% {
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  }
+}
+
+.success > .notification-icon {
+  background-color: #7ce495;
+  border: 1px solid #55c595;
+}
+.error > .notification-icon {
+  background-color: #ff5252;
+  border: 1px solid #a70000;
+}
+.warrning > .notification-icon {
+  background-color: #fe6e00;
+  border: 1px solid #fd5602;
+}
+.error > div {
+  color: #ff0000;
+  font-weight: bolder;
+}
+.warrning > div {
+  color: #fe6e00;
+  font-weight: bolder;
+}
+.success > div {
+  color: rgb(0, 255, 183);
+  font-weight: bolder;
+}

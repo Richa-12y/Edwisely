@@ -85,6 +85,7 @@ const Quize = () => {
       totalMarksObtain: count * 4,
       totalMark: questionList.length * 4,
     });
+
     handleOpen();
   };
   const selectedAns = (value, index) => {
